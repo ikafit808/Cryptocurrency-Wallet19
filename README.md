@@ -26,8 +26,38 @@ Specifically, you will assume the perspective of a KryptoJobs2Go customer in ord
 
 * Calculate the total value of an Ethereum transaction, including the gas estimate, that pays a KryptoJobs2Go candidate for their work.
 
+
 * Digitally sign a transaction that pays a KryptoJobs2Go candidate, and send this transaction to the Ganache blockchain.
 
 * Review the transaction hash code associated with the validated blockchain transaction.
 
 Once you receive the transaction’s hash code, you will navigate to the Transactions section of Ganache to review the blockchain transaction details. To confirm that you have successfully created the transaction, you will save screenshots to the README.md file of your GitHub repository for this Challenge assignment.
+
+### Libraries
+- import streamlit as st
+- from dataclasses import dataclass
+- from typing import Any, List
+- from web3 import Web3
+- import os
+- import requests
+- from dotenv import load_dotenv
+
+- load_dotenv()
+- from bip44 import Wallet
+- from web3 import Account
+- from web3 import middleware
+- from web3.gas_strategies.time_based import medium_gas_price_strategy
+
+### Transaction Outcome
+<img width="267" alt="Screenshot 2024-03-11 at 6 47 17 PM" src="https://github.com/ikafit808/Cryptocurrency-Wallet19/assets/142754993/fdb8636a-0f82-4ba6-a67e-a6c2dd8e728e">
+
+![Screenshot 2024-03-11 at 6 48 59 PM](https://github.com/ikafit808/Cryptocurrency-Wallet19/assets/142754993/ec91a3b1-f609-4d94-adbd-0054027faa10)
+
+![Screenshot 2024-03-11 at 6 48 07 PM](https://github.com/ikafit808/Cryptocurrency-Wallet19/assets/142754993/97407763-6960-4ab1-80c6-c70fd78ffb8e)
+
+![Screenshot 2024-03-11 at 6 51 37 PM](https://github.com/ikafit808/Cryptocurrency-Wallet19/assets/142754993/28f0ad43-a9dd-4881-9180-7ece2697b4bf)
+
+
+
+
+
